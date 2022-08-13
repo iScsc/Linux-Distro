@@ -13,4 +13,7 @@
 - Complete C IDE (Vim + VSCode)
 - Complete Python IDE (Vim + VSCode)
 - Complete Java IDE (Vim + VSCode)
-
+- `git` & `gh` (GitHub CLI)
+- `ghq`
+- Documentation to install other tools
+- Scripts to install all packages above
