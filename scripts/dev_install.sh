@@ -34,5 +34,3 @@ code --install-extension --force eamodio.gitlens # GitLens extension
 code --install-extension --force github.vscode-pull-request-github # Github Pull Request & Issues extension
 code --install-extension --force mhutchie.git-graph # Git Graph extension
 code --install-extension --force codezombiech.gitignore # gitignore extension
-
-

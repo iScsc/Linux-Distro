@@ -1,0 +1,72 @@
+{
+    "audio": "pipewire",
+    "bootloader": "grub-install",
+    "config_version": "2.5.0",
+    "debug": false,
+    "desktop-environment": "xfce4",
+    "gfx_driver": "VMware / VirtualBox (open-source)",
+    "harddrives": [
+        "/dev/sda"
+    ],
+    "keyboard-layout": "fr",
+    "mirror-region": {
+        "France": {
+            "http://arch.nimukaito.net/$repo/os/$arch": true,
+            "http://arch.yourlabs.org/$repo/os/$arch": true,
+            "http://archlinux.datagr.am/$repo/os/$arch": true,
+            "http://archlinux.mailtunnel.eu/$repo/os/$arch": true,
+            "http://archlinux.mirrors.ovh.net/archlinux/$repo/os/$arch": true,
+            "http://archlinux.polymorf.fr/$repo/os/$arch": true,
+            "http://archlinux.rezopole.net/$repo/os/$arch": true,
+            "http://ftp.u-strasbg.fr/linux/distributions/archlinux/$repo/os/$arch": true,
+            "http://mir.archlinux.fr/$repo/os/$arch": true,
+            "http://mirroir.labhouse.fr/arch/$repo/os/$arch": true,
+            "http://mirroir.wptheme.fr/archlinux/$repo/os/$arch": true,
+            "http://mirror.archlinux.ikoula.com/archlinux/$repo/os/$arch": true,
+            "http://mirror.cyberbits.eu/archlinux/$repo/os/$arch": true,
+            "http://mirror.ibcp.fr/pub/archlinux/$repo/os/$arch": true,
+            "http://mirror.theo546.fr/archlinux/$repo/os/$arch": true,
+            "http://mirrors.celianvdb.fr/archlinux/$repo/os/$arch": true,
+            "http://mirrors.gandi.net/archlinux/$repo/os/$arch": true,
+            "http://mirrors.standaloneinstaller.com/archlinux/$repo/os/$arch": true,
+            "https://arch.juline.tech/$repo/os/$arch": true,
+            "https://arch.yourlabs.org/$repo/os/$arch": true,
+            "https://archlinux.mailtunnel.eu/$repo/os/$arch": true,
+            "https://mirroir.labhouse.fr/arch/$repo/os/$arch": true,
+            "https://mirroir.wptheme.fr/archlinux/$repo/os/$arch": true,
+            "https://mirror.cyberbits.eu/archlinux/$repo/os/$arch": true,
+            "https://mirror.ibakerserver.pt/Arch/$repo/os/$arch": true,
+            "https://mirror.sysa.tech/archlinux/$repo/os/$arch": true,
+            "https://mirror.thekinrar.fr/archlinux/$repo/os/$arch": true,
+            "https://mirror.theo546.fr/archlinux/$repo/os/$arch": true,
+            "https://mirror.wormhole.eu/archlinux/$repo/os/$arch": true,
+            "https://mirrors.celianvdb.fr/archlinux/$repo/os/$arch": true,
+            "https://mirrors.eric.ovh/arch/$repo/os/$arch": true,
+            "https://mirrors.gandi.net/archlinux/$repo/os/$arch": true
+        }
+    },
+    "mount_point": null,
+    "nic": {
+        "dhcp": true,
+        "dns": null,
+        "gateway": null,
+        "iface": null,
+        "ip": null,
+        "type": "iso"
+    },
+    "packages": [
+        "vim",
+        "firefox",
+        "nano"
+    ],
+    "plugin": null,
+    "profile": {
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
+    },
+    "script": "guided",
+    "silent": false,
+    "swap": true,
+    "sys-language": "en_US",
+    "timezone": "Europe/Paris",
+    "version": "2.5.0"
+}
