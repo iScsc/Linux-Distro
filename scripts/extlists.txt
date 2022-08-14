@@ -1,0 +1,9 @@
+ms-python.python
+ms-vscode.cpptools-extension-pack
+formulahendry.code-runner
+vscjava.vscode-java-pack
+johnstoncode.svn-scm
+eamodio.gitlens
+github.vscode-pull-request-github
+mhutchie.git-graph
+codezombiech.gitignore

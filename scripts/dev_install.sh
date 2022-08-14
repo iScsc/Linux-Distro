@@ -1,36 +1,27 @@
 #!/bin/sh
 
-# Run this script as sudo -> 'sudo bash dev_install.sh'
-pacman -Syu # Check if package database is up to date.
+# Color definition
+BLUE='\033[0;34m'
+RED='\033[0;31m'
+NC='\033[0m'
 
-# basic packages
-pacman -S man-db man-pages # man pages
-pacman -S base-devel # equivalent to 'build-essential' with apt
+base_packages () {
+    echo -e "Installing basic packages - ${BLUE}See `pkglist.txt` for more informations${NC}"
+    pacman -Qqen > pkglist.txt
+    pacman -Sq - > pkglist.txt
+    echo -e "${RED}Done !${NC}"
+}
 
-# SCM
-pacman -S git svn github-cli
+aur_helper () {
+    echo -e "Installing `paru` ${BLUE}-> /tmp/paru${NC}"
+    mkdir /tmp/paru
+    echo -e "${RED}Cloning Git repository ...${NC}"
+    git clone https://aur.archlinux.org/paru.git /tmp/paru
+    echo -e "${RED}Building paru ...${NC}"
+    cd /tmp/paru
+    makepkg -si
+    echo -e "${RED}Done !${NC}"
+}
 
-# DEV
-pacman -S python3 python-pip # Python
-pacman -S valgrind # C
-pacman -S jre-openjdk jdk-openjdk # Java
-
-# AUR Helper
-mkdir /tmp/paru
-git clone https://aur.archlinux.org/paru.git /tmp/paru
-cd /tmp/paru
-makepkg -si
-
-# Code editors -> vim is already installed
-paru -S visual-studio-code-bin # VSCode
-# VSCode extension - dev
-code --install-extension --force ms-python.python # Microsoft Python extension pack
-code --install-extension --force ms-vscode.cpptools-extension-pack # Microsoft C extension pack
-code --install-extension --force formulahendry.code-runner # Code Runner
-code --install-extension --force vscjava.vscode-java-pack # Microsoft Java extension pack
-# VSCode extension - SCM
-code --install-extension --force johnstoncode.svn-scm # SVN support
-code --install-extension --force eamodio.gitlens # GitLens extension
-code --install-extension --force github.vscode-pull-request-github # Github Pull Request & Issues extension
-code --install-extension --force mhutchie.git-graph # Git Graph extension
-code --install-extension --force codezombiech.gitignore # gitignore extension
+base_packages
+aur_helper

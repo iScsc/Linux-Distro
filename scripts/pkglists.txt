@@ -1,0 +1,11 @@
+base-devel
+man-db
+man-pages
+git
+svn
+github-cli
+python3
+valgrind
+python-pip
+jre-openjdk
+jdk-openjdk
