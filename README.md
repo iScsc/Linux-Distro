@@ -13,5 +13,3 @@
 ## Tools & Softwares
 
 [**&rarr; [TOC]**](#table-of-contents)
-
-- [ ] Linux from Scratch as base system
